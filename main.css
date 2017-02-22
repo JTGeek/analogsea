@@ -10,13 +10,12 @@ body {
   height: 35px;
   margin:40px;
 }
-h1 {
-  
-}
 
 .box {
-  width: 600px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-color: white;
   margin:0 auto;
   
@@ -32,19 +31,26 @@ h1 {
 
 .email {
   display: block;
+  text-align: left;
 }
 
 .password {
   display: block;
+  text-align: left;
+}
+input[type='email'], input[type='password'] {
+ border: 2px solid lightgrey; 
+ width: 320px;
+ padding: 15px;
 }
 
 button[type='submit'] {
     display:block;
     background: #15CD72;
-    border: 0;
+    border: 2px solid lightgrey;
     font-weight: 500;
     font-size: 22px;
-    text-align: center;
+    /*text-align: center;*/
     cursor: pointer;
     margin: 0 auto;
     margin-top: 10px;
@@ -53,8 +59,14 @@ button[type='submit'] {
     padding: 15px;
     display: block;
     border-radius: 3px;
+    width: 320px;
 }
 
+input {
+	width: 320px;
+	border: 2px;
+	padding: 15px;
+}
 .footer {
   color: white;
 }
@@ -64,4 +76,9 @@ button[type='submit'] {
 .lost-pass {
   color: grey;
   text-decoration: underline;
+}
+
+button:hover[type='submit'] {
+background-color: #0CB863;
+transition: background 0.1s;
 }
